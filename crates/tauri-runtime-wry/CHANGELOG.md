@@ -1,5 +1,17 @@
 # Changelog
 
+## \[2.7.3]
+
+### Bug Fixes
+
+- [`82e264552`](https://www.github.com/tauri-apps/tauri/commit/82e264552ed3e1d62135edc5803a2c5d92f9c5c7) ([#13968](https://www.github.com/tauri-apps/tauri/pull/13968) by [@s5bug](https://www.github.com/tauri-apps/tauri/../../s5bug)) Use WM_NCDESTROY instead of WM_DESTROY to free window userdata, fixing a double-free occurring in the Windows resizing handler for undecorated windows which caused STATUS_HEAP_CORRUPTION
+- [`196ace3c0`](https://www.github.com/tauri-apps/tauri/commit/196ace3c048f81b20ab4d38f09c2f200978722b8) ([#13970](https://www.github.com/tauri-apps/tauri/pull/13970) by [@Legend-Master](https://www.github.com/tauri-apps/tauri/../../Legend-Master)) Return `tauri_runtime::Error::CreateWindow` instead of panic on window creation failed
+
+### Dependencies
+
+- Upgraded to `tauri-utils@2.7.0`
+- Upgraded to `tauri-runtime@2.7.2`
+
 ## \[2.7.2]
 
 ### What's Changed

@@ -1,5 +1,17 @@
 # Changelog
 
+## \[2.8.0]
+
+### Enhancements
+
+- [`5ba1c3faa`](https://www.github.com/tauri-apps/tauri/commit/5ba1c3faa468073512bdb5035a01f7f99720fcf0) ([#13722](https://www.github.com/tauri-apps/tauri/pull/13722) by [@s00d](https://www.github.com/tauri-apps/tauri/../../s00d)) Added icon (icon and nativeIcon) support for Submenu:
+
+  - In the Rust API (`tauri`), you can now set an icon for submenus via the builder and dedicated methods.
+  - In the JS/TS API (`@tauri-apps/api`), `SubmenuOptions` now has an `icon` field, and the `Submenu` class provides `setIcon` and `setNativeIcon` methods.
+  - Usage examples are added to the documentation and demo app.
+
+  This is a backwards-compatible feature. Submenus can now display icons just like regular menu items.
+
 ## \[2.7.0]
 
 ### New Features

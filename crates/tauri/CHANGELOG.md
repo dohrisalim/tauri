@@ -1,5 +1,26 @@
 # Changelog
 
+## \[2.8.0]
+
+### Enhancements
+
+- [`72b4226ee`](https://www.github.com/tauri-apps/tauri/commit/72b4226ee9932b4dafa4837a49420b2c02d14bb7) ([#13809](https://www.github.com/tauri-apps/tauri/pull/13809) by [@Beanow](https://www.github.com/tauri-apps/tauri/../../Beanow)) Reduced `Debug` format size for binary buffers.
+- [`5ba1c3faa`](https://www.github.com/tauri-apps/tauri/commit/5ba1c3faa468073512bdb5035a01f7f99720fcf0) ([#13722](https://www.github.com/tauri-apps/tauri/pull/13722) by [@s00d](https://www.github.com/tauri-apps/tauri/../../s00d)) Added icon (icon and nativeIcon) support for Submenu:
+
+  - In the Rust API (`tauri`), you can now set an icon for submenus via the builder and dedicated methods.
+  - In the JS/TS API (`@tauri-apps/api`), `SubmenuOptions` now has an `icon` field, and the `Submenu` class provides `setIcon` and `setNativeIcon` methods.
+  - Usage examples are added to the documentation and demo app.
+
+  This is a backwards-compatible feature. Submenus can now display icons just like regular menu items.
+
+### Dependencies
+
+- Upgraded to `tauri-utils@2.7.0`
+- Upgraded to `tauri-runtime-wry@2.7.3`
+- Upgraded to `tauri-runtime@2.7.2`
+- Upgraded to `tauri-macros@2.3.3`
+- Upgraded to `tauri-build@2.3.2`
+
 ## \[2.7.0]
 
 ### New Features
